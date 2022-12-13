@@ -13,15 +13,16 @@ public class Person {
         points = 0;
     }
 
-    public int addPoints(int i) {
+  /*  public int addPoints(int i) {
         int addedPoints = scanner.nextInt();
         return addedPoints + points;
-    }
+    } */
 
     public String toString() {
         return "First name: " + firstName +
                 "\nLast name: " + lastName +
-                "\nPoints: " + points;
+                "\nPoints: " + points +
+                "\n-----------------";
     }
 
     public String getFirstName() {
