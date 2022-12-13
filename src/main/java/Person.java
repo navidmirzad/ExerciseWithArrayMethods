@@ -5,6 +5,7 @@ public class Person {
     private String firstName;
     private String lastName;
     private int points;
+    private Scanner scanner = new Scanner(System.in);
 
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
@@ -12,8 +13,7 @@ public class Person {
         points = 0;
     }
 
-    public int addPoints() {
-        Scanner scanner = new Scanner(System.in);
+    public int addPoints(int i) {
         int addedPoints = scanner.nextInt();
         return addedPoints + points;
     }
