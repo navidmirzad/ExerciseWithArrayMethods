@@ -19,7 +19,7 @@ public class Person {
     } */
 
     public String toString() {
-        return "First name: " + firstName +
+        return "\nFirst name: " + firstName +
                 "\nLast name: " + lastName +
                 "\nPoints: " + points +
                 "\n-----------------";
