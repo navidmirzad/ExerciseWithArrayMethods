@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Person {
 
     private String firstName;
@@ -8,6 +10,12 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         points = 0;
+    }
+
+    public int addPoints() {
+        Scanner scanner = new Scanner(System.in);
+        int addedPoints = scanner.nextInt();
+        return addedPoints + points;
     }
 
     public String toString() {
@@ -39,7 +47,5 @@ public class Person {
     public void setPoints(int points) {
         this.points = points;
     }
-
-
 
 }
