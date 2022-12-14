@@ -13,10 +13,9 @@ public class Person {
         points = 0;
     }
 
-  /*  public int addPoints(int i) {
-        int addedPoints = scanner.nextInt();
-        return addedPoints + points;
-    } */
+    public void addPoints(int point) {
+        this.points += points;
+    }
 
     public String toString() {
         return "\nFirst name: " + firstName +
@@ -29,9 +28,9 @@ public class Person {
         return firstName;
     }
 
-   public void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
-   }
+    }
 
     public String getLastName() {
         return lastName;
