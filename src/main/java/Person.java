@@ -10,15 +10,11 @@ public class Person {
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        points = 0;
-    }
-
-    public Person() {
-
+        this.points = 0;
     }
 
     public void addPoints(int point) {
-        this.points += points;
+        this.points += point;
     }
 
     public String toString() {
@@ -44,7 +40,7 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public int getPoints() {
+    public int getPoint() {
         return points;
     }
 
