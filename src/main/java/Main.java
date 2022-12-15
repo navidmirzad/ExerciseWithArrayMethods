@@ -3,6 +3,8 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
+        loopMetoder loopMetoder = new loopMetoder();
+
         Person harry = new Person("Harry", "Potter");
         Person ron = new Person("Ron", "Weasley");
         Person hermione = new Person("Hermione", "Granger");
@@ -12,9 +14,9 @@ public class Main {
 
         Person personer[] = {harry, ginny, ron, hermione, draco};
 
-        for (Person person : personer) {
+       /* for (Person person : personer) {
             System.out.println(person);
-        }
+        } */
 
         harry.setPoints(100);
         ron.setPoints(231);
@@ -26,6 +28,9 @@ public class Main {
         System.out.println(Arrays.toString(personer));
 
        // System.out.println(harry + "\n" + ron + "\n" + hermione);
+
+
+        System.out.println("Total amount of points: " + loopMetoder.calculateTotalPoints(personer));
 
 
 

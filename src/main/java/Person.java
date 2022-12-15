@@ -13,6 +13,10 @@ public class Person {
         points = 0;
     }
 
+    public Person() {
+
+    }
+
     public void addPoints(int point) {
         this.points += points;
     }
